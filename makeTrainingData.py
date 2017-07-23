@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import random
 import sys
+import csv
 
 count = 0
 f = open('trainingDate100.csv', 'w')
@@ -12,12 +13,11 @@ for line in open('./list_person_all_utf8.csv'):
     itemList = line[:-1].split(',')
 
     if count == 0:
-        f.write("age,gender,clicked,title_id\n")
-    elif count < 102:
-        for item in [age, gender, clicked, itemList[2]]:
-            f.write(str(item))
-            f.write(",")
-        f.write("\n")
+        # f.write("age,gender,clicked,title_id\n")
+        f.write("100,3\n")
+    elif count < 101:
+        writer = csv.writer(f, lineterminator='\n')
+        writer.writerow([age, gender, clicked, int(itemList[2])])
     count += 1
 f.close()
 

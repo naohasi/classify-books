@@ -1,4 +1,27 @@
 # classify-books
+
+## 開発環境
+- Python 2.7
+- pip 9.0.1
+- Mac
+
+## tensorflowを入れる
+- https://www.tensorflow.org/versions/master/install/install_mac
+- EasyInstallはPythonのためのパッケージ管理システムである
+
+```
+$ sudo easy_install pip
+$ sudo pip install --upgrade virtualenv
+$ virtualenv --system-site-packages tensorflow
+$ source tensorflow/bin/activate
+```
+
+(tensorflow) ```
+$ easy_install -U pip
+$ pip install --upgrade tensorflow
+
+```
+
 ## 仕様
 - 青空文庫のタイトル一覧を利用
  - http://www.aozora.gr.jp/index_pages/person_all.html
