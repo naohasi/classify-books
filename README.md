@@ -16,7 +16,7 @@ $ virtualenv --system-site-packages tensorflow
 $ source tensorflow/bin/activate
 ```
 
-(tensorflow) ```
+```
 $ easy_install -U pip
 $ pip install --upgrade tensorflow
 
@@ -43,6 +43,7 @@ $ pip install --upgrade tensorflow
   - output:title_id
 
 # 実行結果
+- https://github.com/naonaoakiaki/classify-books/tree/v1.0 のバージョンで実行
 ```
 $ tree ./
 ./
